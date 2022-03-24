@@ -1,20 +1,17 @@
 
+import numpy as np
 
-import numpy as np 
-from general_math import *
+# point
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+# distance between two points
 
+def distance(p1, p2):
+    return ((p2.x -p1.x)**2 + (p2.y -p1.y)**2)**(1/2)
 
-G = 6.67408*(10**(-11))
+# p1 = Point(0,0)
+# p2 = Point(0, 5)
 
-'''
-
-'''
-class Celestial:
-    def __init__(self, m, point):
-        self.m = m
-        self.p = point
-
-
-def gravity(b1, b2):
-    return (b1.m * b2.m*G)/((distance(b1.p, b2.p))**2)
-
+# print(distance(p1, p2))
