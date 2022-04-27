@@ -15,3 +15,7 @@ def distance(p1, p2):
 # p2 = Point(0, 5)
 
 # print(distance(p1, p2))
+
+# forces = [[1, 1], [1, -1], [-1, -1], [-1, 1]]
+# total_force = [0, 0]
+
